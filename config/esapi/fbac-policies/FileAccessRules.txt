@@ -1,0 +1,24 @@
+#Directory						| user	| permission| comment
+/                				| any   | deny  	| default deny
+config/esapi/*					| any   | deny  	| esapi configuration deny 
+config/*           				| any   | allow 	|
+configuration/*        			| any   | allow 	|
+log/*           				| any   | allow 	|
+xmlconf          				| any   | allow 	|
+xmlauto          				| any   | allow 	|
+stubid          				| any   | allow 	|
+plugins							| any	| allow 	|
+dataModel/*						| any	| allow 	|
+zippedCerts						| any	| allow 	|
+templates						| any	| allow 	|
+DoryContentSent					| any	| allow 	|
+Buffering/*						| any	| allow 	|
+data/*						| any	| allow 	|
+DoryTriggerReceived				| any	| allow 	|
+zippedLogs						| any	| allow 	|
+deployedBundlesOnMirrServ.txt	| any	| allow 	|
+*.plat1template					| any	| allow 	|
+PacketDB-CayenneConfig/*		| any	| allow 	|
+dorybootup/*			| any	| allow		| Bootup directory used by bootstrapper
+webapps/iot#cockpit/downloads/* | any	| allow 	|
+webapps/cockpit-web/downloads/* | any	| allow 	|

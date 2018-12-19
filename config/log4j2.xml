@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" strict="true" name="XMLConfigTest"
+               packages="org.apache.logging.log4j.test">
+    <Appenders>
+        <Appender type="Console" name="console">
+            <!-- NOTE: REMOVE %L IN PRODUCTION !!! -->
+            <Layout type="PatternLayout" pattern="%d{ddMMM HH:mm:ss,SSS} [%t] %-5p (%c{1}:%L) - %m%n"/>
+        </Appender>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.sap.iotservices.jms.filters.AuthenticationBrokerFilter" level="ERROR"/>
+        <Logger name="com.sap.iotservices.jms.filters.AuthenticationBroker" level="WARN"/>
+        <Logger name="com.sap.iotservices.jms.filters.ConnectionCounterBrokerFilter" level="WARN"/>
+        <Logger name="com.sap.iotservices.jms.impl.Consumer" level="ERROR"/>
+        <Logger name="com.sap.iotservices.jms.impl.StubIPCJFactory" level="WARN"/>
+        <Logger name="com.sap.iotservices.jms.utils.MessageHandler" level="WARN"/>
+        <Logger name="com.sap.iotservices.ws.interceptors.server.WSSecurityInInterceptor" level="WARN"/>
+        <Logger name="com.sap.iotservices.ws.interceptors.server.WSSecurityOutInterceptor" level="WARN"/>
+        <Logger name="org.snmp4j.agent.DefaultMOServer" level="ERROR"/>
+        <Logger name="org.snmp4j.agent.mo.snmp.NotificationOriginatorImpl" level="ERROR"/>
+
+        <Logger name="org.apache.activemq" level="WARN"/>
+        <Logger name="org.apache.activemq.transport.failover.FailoverTransport" level="ERROR"/>
+        <Logger name="org.apache.cxf" level="ERROR"/>
+        <Logger name="org.apache.cxf.endpoint.ServerImpl" level="WARN"/>
+        <Logger name="org.apache.cxf.interceptor.LoggingInInterceptor" level="WARN"/>
+        <Logger name="org.apache.cxf.interceptor.LoggingOutInterceptor" level="WARN"/>
+        <Logger name="org.eclipse.jetty" level="ERROR"/>
+        <Logger name="org.eclipse.jetty.server.handler.ContextHandler" level="WARN"/>
+        <Logger name="org.reflections" level="ERROR"/>
+        <Root level="INFO">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
